@@ -1,8 +1,6 @@
 const admin = require('firebase-admin');
 const geofire = require('geofire');
 
-const API_TOKEN = 'AIzaSyC0pFkaz03pIaitbPYo4p1HUZjlp9DlD1w';
-
 admin.initializeApp({
 	credential: admin.credential.cert('./argraffiti-1e48b-firebase-adminsdk-o5hla-4612866f5c.json'),
 	databaseURL: 'https://argraffiti-1e48b.firebaseio.com/'
