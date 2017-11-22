@@ -10,7 +10,7 @@ admin.initializeApp({
 const ref = admin.database().ref();
 const geoFire = new geofire(admin.database().ref('graffitiLocation'));
 
-function listenForNotificationRequests() {
+function listenForGraffitiInserts() {
 	const requests = ref.child('graffitiQueue');
 	const graffitiRef = ref.child('graffiti');
 	requests.on('child_added', requestSnapshot => {
@@ -32,4 +32,4 @@ function listenForNotificationRequests() {
 	});
 }
 
-listenForNotificationRequests();
+listenForGraffitiInserts();
