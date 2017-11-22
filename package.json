@@ -1,0 +1,16 @@
+{
+  "name": "argraffiti_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ARGraffitiServer.js",
+  "scripts": {
+    "test": "node ARGraffitiServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^4.6.2",
+    "firebase-admin": "^5.5.0",
+    "geofire": "^4.1.2"
+  }
+}
